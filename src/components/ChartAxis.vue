@@ -1,19 +1,18 @@
 <template>
-  <g :transform='trns'>
-                <g ref="axis"  >
-                </g>
-</g>
+  <g :transform='transformations'>
+    <g ref="axis"></g>
+  </g>
 </template>
 
 <script>
 import * as d3 from "d3";
 export default {
-  name: "axis",
+  name: "ChartAxis",
   props: {
     scales: Function,
     chartDefaults: Object,
     data: Array,
-    trns: String
+    transformations: String
   },
 
   data() {

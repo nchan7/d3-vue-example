@@ -1,9 +1,7 @@
 <template>
   <div id="app">
-
     <LineChart v-bind:class="[toggleClass]"/>
- <button v-on:click="play">Play again</button>
-
+    <!-- <button v-on:click="play">Play again</button> -->
   </div>
 </template>
 
@@ -24,6 +22,7 @@ export default {
   },
 
   methods: {
+    // this method is not in use at the moment
     play() {
       // toggle classes to animate the line draw
       this.toggleClass == "ani1"
@@ -42,7 +41,7 @@ export default {
   text-align: center;
   color: #fff;
   margin-top: 60px;
-  background-color: #f47166;
+  background-color: rgb(0, 40, 86);
 }
 
 button {
